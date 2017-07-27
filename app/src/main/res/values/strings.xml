@@ -1,0 +1,35 @@
+<resources>
+    <string name="app_name">Digital Menu</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="pizza">Pizza</string>
+    <string name="wine">Wine</string>
+    <string name="cocktails">Cocktail</string>
+    <string name="my_order">My Order</string>
+    <string name="bill">Bill</string>
+    <string name="confirmation_dialog_msg">Are you sure you want to submit your order?</string>
+    <string name="no">No</string>
+    <string name="yes">Yes</string>
+    <string name="order_successful">Your order has been submitted, it will come shortly to your table</string>
+    <string name="bill_request_dialog_msg">Note: After requesting a bill you will not be able to order again. Are you sure that you want to request a bill?</string>
+    <string name="bill_request_successful">Your bill has been requested. Your waiter will deliver your bill shortly.</string>
+    <string name="database_version_label">Database version</string>
+    <string name="database_version_key">database version</string>
+    <string name="database_version_default_value">0</string>
+    <string name="no_order">You have not ordered anything. Please order something before submitting the order.</string>
+    <string name="deletion_successful">has been deleted from the order list.</string>
+    <string name="bill_request_failed">You have to order something first.</string>
+    <string name="add_button_clicked">has been added to MyOrder</string>
+    <string name="refresh">Refresh</string>
+    <string name="password_prompt">Type in the password:</string>
+    <string name="password">1234</string>
+    <string name="closing_dialog_msg">Bill and My Order have been successfully removed by a waiter.</string>
+    <string name="wrong_password">The password you typed was wrong. Please try again.</string>
+    <string name="unable_to_order">Sorry, but you cannot order after you have requested your bill.</string>
+    <string name="bill_request">Bill Request</string>
+    <string name="bill_request_key">bill_request</string>
+    <string name="bill_request_value">0</string>
+    <string name="second_card_title">Description</string>
+    <string name="my_bill">Bill</string>
+</resources>

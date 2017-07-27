@@ -1,0 +1,82 @@
+<LinearLayout android:id="@+id/o_LL"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginEnd="@dimen/margin_cardtoedge"
+    android:layout_marginLeft="@dimen/margin_cardtoedge"
+    android:layout_marginRight="@dimen/margin_cardtoedge"
+    android:layout_marginStart="@dimen/margin_cardtoedge"
+    android:layout_marginTop="@dimen/margin_cardtoedge"
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <com.example.terz99.digitalmenuv2.ThreeTwoImageView
+        android:id="@+id/o_image"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:fitsSystemWindows="true"
+        android:scaleType="centerCrop" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:orientation="vertical">
+
+
+            <TextView
+                android:id="@+id/o_text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/regular_margin"
+                android:fontFamily="sans-serif-light"
+                android:textColor="@color/primary_text"
+                android:textSize="@dimen/text_size"
+                tools:text="Name" />
+
+            <TextView
+
+                android:id="@+id/o_price"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/regular_margin"
+                android:layout_marginLeft="@dimen/regular_margin"
+                android:layout_marginRight="@dimen/regular_margin"
+                android:textSize="@dimen/price_text_size"
+                tools:text="Example Price" />
+
+        </LinearLayout>
+
+
+        <ImageButton
+            android:id="@+id/clear_button"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_margin="@dimen/regular_margin"
+            android:background="@android:color/transparent"
+            android:src="@drawable/ic_close" />
+
+        <TextView
+            android:id="@+id/o_quantity"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/text_size"
+            android:layout_centerVertical="true"
+            android:layout_marginBottom="@dimen/regular_margin"
+            android:layout_marginTop="@dimen/regular_margin"
+            android:layout_toLeftOf="@+id/clear_button"
+            android:layout_toStartOf="@+id/clear_button"
+            android:textAlignment="center"
+            android:textColor="@color/primary_text" />
+
+    </RelativeLayout>
+
+</LinearLayout>

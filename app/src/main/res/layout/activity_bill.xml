@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.terz99.digitalmenuv2.MyOrderActivity">
+
+    <android.support.design.widget.AppBarLayout
+        android:id="@+id/bill_app_bar_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="?colorPrimary"
+        android:fitsSystemWindows="true">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/bill_my_toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="?attr/colorPrimary"
+            android:elevation="@dimen/toolbar_elevation"
+            android:theme="@style/ThemeOverlay.AppCompat.ActionBar"
+            android:title="@string/my_bill"
+            app:popupTheme="@style/ThemeOverlay.AppCompat.Light" />
+
+    </android.support.design.widget.AppBarLayout>
+
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/b_listview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/layout_bottom_bill"
+        android:layout_below="@+id/bill_app_bar_layout" />
+
+
+
+    <LinearLayout
+        android:id="@+id/layout_bottom_bill"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:orientation="vertical">
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/divider_size"
+            android:background="@color/colorPrimaryDark"
+
+            />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/b_request_bill_fab"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true"
+                android:text="Bill"
+                android:background="?attr/selectableItemBackgroundBorderless"
+                android:clickable="true"
+                android:textSize="@dimen/o_text_bottom"
+                android:textColor="@color/primary_text"
+                android:fontFamily="sans-serif-light"
+                android:layout_margin="@dimen/margin_cardtoedge"/>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentLeft="true"
+                android:background="@color/colorPrimary"
+                android:orientation="horizontal">
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginBottom="@dimen/margin_cardtoedge"
+                    android:layout_marginLeft="@dimen/margin_cardtoedge"
+                    android:layout_marginStart="@dimen/margin_cardtoedge"
+                    android:layout_marginTop="@dimen/margin_cardtoedge"
+                    android:fontFamily="sans-serif-light"
+                    android:gravity="center_vertical"
+                    android:text="Total price: "
+                    android:textColor="@color/primary_text"
+                    android:textSize="@dimen/o_text_bottom" />
+
+                <TextView
+                    android:id="@+id/total_prize_bill"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginBottom="@dimen/margin_cardtoedge"
+                    android:layout_marginLeft="@dimen/regular_margin"
+                    android:layout_marginStart="@dimen/regular_margin"
+                    android:layout_marginTop="@dimen/margin_cardtoedge"
+                    android:fontFamily="sans-serif-light"
+                    android:gravity="center_vertical"
+                    android:textColor="@color/primary_text"
+                    android:textSize="@dimen/o_text_bottom" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginBottom="@dimen/margin_cardtoedge"
+                    android:layout_marginTop="@dimen/margin_cardtoedge"
+                    android:fontFamily="sans-serif-light"
+                    android:text="$"
+                    android:textColor="@color/primary_text"
+                    android:textSize="@dimen/o_text_bottom" />
+            </LinearLayout>
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>

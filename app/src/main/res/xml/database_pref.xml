@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <Preference
+        android:title="@string/database_version_label"
+        android:key="@string/database_version_key"
+        android:defaultValue="@string/database_version_default_value" />
+
+    <Preference
+        android:title="@string/bill_request"
+        android:key="@string/bill_request_key"
+        android:defaultValue="@string/bill_request_value"/>
+
+</PreferenceScreen>

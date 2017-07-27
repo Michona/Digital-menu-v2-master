@@ -1,0 +1,17 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/Tabs_color</item>
+        <item name="colorPrimaryDark">@color/Tabs_color</item>
+        <item name="colorAccent">@color/Tabs_color</item>
+    </style>
+
+    <style name="AlertDialog.AppCompat.Light." parent="AlertDialog.AppCompat">
+
+        <item name="android:textColor">@color/primary_text</item>
+    </style>
+
+
+</resources>
